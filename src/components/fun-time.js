@@ -1,19 +1,27 @@
-import React from 'react';
-import Rive from 'rive-react';
+import React, { useEffect } from 'react';
+import { useRive } from 'rive-react';
 
 import animation from './fun-time.riv';
 
+import usePrefersReducedMotion from '../hooks/use-prefers-reduced-motion';
+
 const FunTime = ({ className }) => {
-  return <Rive src={animation} className={className} />;
+  const prefersReducedMotion = usePrefersReducedMotion();
+  const { rive, RiveComponent } = useRive({
+    src: animation
+  });
+
+  useEffect(() => {
+    if (rive) {
+      if (prefersReducedMotion) {
+        rive.pause();
+      } else {
+        rive.play();
+      }
+    }
+  }, [rive, prefersReducedMotion]);
+
+  return <RiveComponent className={className} />;
 };
-
-// const FunTime = () => {
-//   const { RiveComponent } = useRive({
-//     src: animation,
-//     autoplay: false
-//   });
-
-//   return <RiveComponent className="fun-time-animation" />;
-// };
 
 export default FunTime;
