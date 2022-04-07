@@ -1,0 +1,30 @@
+{
+  "name": "gatsby-rive-react-runtime",
+  "version": "1.0.0",
+  "description": "A Demo repo using Gatsby + Rive's React Runtime",
+  "main": "index.js",
+  "scripts": {
+    "develop": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PaulieScanlon/gatsby-rive-react-runtime.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PaulieScanlon/gatsby-rive-react-runtime/issues"
+  },
+  "homepage": "https://github.com/PaulieScanlon/gatsby-rive-react-runtime#readme",
+  "dependencies": {
+    "gatsby": "^4.11.2",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "rive-react": "^1.0.4"
+  }
+}
