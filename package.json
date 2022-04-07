@@ -26,5 +26,9 @@
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "rive-react": "^1.0.4"
+  },
+  "devDependencies": {
+    "gatsby-plugin-perf-budgets": "^0.0.18",
+    "gatsby-plugin-webpack-bundle-analyser-v2": "^1.1.27"
   }
 }
