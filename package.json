@@ -23,6 +23,9 @@
   "homepage": "https://github.com/PaulieScanlon/gatsby-rive-react-runtime#readme",
   "dependencies": {
     "gatsby": "^4.11.2",
+    "gatsby-plugin-image": "^2.11.1",
+    "gatsby-plugin-sharp": "^4.11.1",
+    "gatsby-source-filesystem": "^4.11.1",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "rive-react": "^1.0.4"
