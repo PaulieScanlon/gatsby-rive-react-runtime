@@ -1,5 +1,5 @@
 import React, { useState, useEffect, lazy, Suspense } from 'react';
-import { StaticImage } from 'gatsby-plugin-image';
+import FunTimeFallback from '../components/fun-time-fallback';
 
 const FunTime = lazy(() => import('../components/fun-time'));
 
@@ -14,13 +14,9 @@ const Page = () => {
     <main className="container">
       <div className="hero">
         {!isMounted || navigator?.connection?.saveData || !matchMedia('(min-width: 768px)').matches ? (
-          <StaticImage src="../images/fun-time-fallback.jpg" alt="fun-time" className="fun-time-animation" />
+          <FunTimeFallback />
         ) : (
-          <Suspense
-            fallback={
-              <StaticImage src="../images/fun-time-fallback.jpg" alt="fun-time" className="fun-time-animation" />
-            }
-          >
+          <Suspense fallback={<FunTimeFallback />}>
             <FunTime className="fun-time-animation" />
           </Suspense>
         )}

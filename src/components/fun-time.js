@@ -21,7 +21,7 @@ const FunTime = ({ className }) => {
     }
   }, [rive, prefersReducedMotion]);
 
-  return <RiveComponent className={className} />;
+  return <RiveComponent className={className} role="img" aria-label="fun time animation" />;
 };
 
 export default FunTime;
