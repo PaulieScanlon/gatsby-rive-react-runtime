@@ -2087,10 +2087,15 @@
   resolved "https://registry.yarnpkg.com/@polka/url/-/url-1.0.0-next.21.tgz#5de5a2385a35309427f6011992b544514d559aa1"
   integrity sha512-a5Sab1C4/icpTZVzZc5Ghpz88yQtGOyNqYXcZgOssB2uuAr+wF/MvN6bgtW32q7HHrvBki+BsZ0OuNv6EV3K9g==
 
-"@rive-app/webgl@1.0.33":
-  version "1.0.33"
-  resolved "https://registry.yarnpkg.com/@rive-app/webgl/-/webgl-1.0.33.tgz#26ca3618b86c18843ef96f23ebcf9e8acb8fc084"
-  integrity sha512-WNaoQdeH6CVk3LOLqNFLykXFF5gF51lhUBUo1ebtMg4LdeNRDDRSN4BhyAaLZ00yfBNeHk6PL1MQlv4EwEjNCQ==
+"@rive-app/canvas@1.0.46":
+  version "1.0.46"
+  resolved "https://registry.yarnpkg.com/@rive-app/canvas/-/canvas-1.0.46.tgz#a0e4d95a0356d4de60105d313258e0964cea34c1"
+  integrity sha512-OcOClSqK8+dO7I20cHs8an56IKUZuhyP+0/glrSYPDVSCyPGttK2LGFcl2f0C5ZNNZ9WvADp6+/EisiFiLJGNA==
+
+"@rive-app/webgl@1.0.43":
+  version "1.0.43"
+  resolved "https://registry.yarnpkg.com/@rive-app/webgl/-/webgl-1.0.43.tgz#2d6c1d871b5f1afb8d1aa9c09621b30ae3dc019a"
+  integrity sha512-er+z06z7Yx/2UzhBp2+W0bI12oAwaZ5pOi2woKLAvKg4pI0ahdW6k/YCiZsyQZr5B2iORZNgkYAEKJNEBMDWkg==
 
 "@sideway/address@^4.1.3":
   version "4.1.4"
@@ -9170,12 +9175,13 @@ rimraf@^3.0.0, rimraf@^3.0.2:
   dependencies:
     glob "^7.1.3"
 
-rive-react@^1.0.4:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/rive-react/-/rive-react-1.0.4.tgz#57ab69294b5a653da76ec0dce4c3735e1e52480a"
-  integrity sha512-XCb5JsUHWDNo0ujF/rgIrXLaHKYTnTdvQmeO3CGC+R6jVqmAvYOnpqCvN+rh280PukkU1+7SZzRB9EcIV4NdLw==
+rive-react@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/rive-react/-/rive-react-2.0.0.tgz#772edb32f4e80760c6a6ef86ee3ec71b3522e0d0"
+  integrity sha512-cfxtfSsRXUJhcAg5pfK123aAIsiajRVqaB2lHoRRxKwiFERBM7jiOkgw1ohwwp1flWW/2smM7Yxkchs4VsYClw==
   dependencies:
-    "@rive-app/webgl" "1.0.33"
+    "@rive-app/canvas" "1.0.46"
+    "@rive-app/webgl" "1.0.43"
 
 run-async@^2.4.0:
   version "2.4.1"
